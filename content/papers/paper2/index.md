@@ -1,17 +1,17 @@
 ---
-title: "The Finer Points of Sausage Dogs" 
-date: 2004-12-28
-tags: ["zoology","sausage dogs","canine pulmonary efficiency","canine science","experimental zoology"]
-author: ["Florianus Prinzel", "Moritz-Maria von Igelfeld"]
-description: "This paper studies the pulmonary efficiency of sausage dogs. Published in the Journal of Canine Science, 2004." 
-summary: "This paper studies the pulmonary efficiency of sausage dogs through several experiments." 
+title: "Queueing and inventories on the limit order book"
+date: 2025-09-01
+tags: ["limit order markets", "financial markets", "liquidity"]
+author: ["Corey Garriott", "Vincent van Kervel", "Marius Zoican"]
+description: "A model of queueing applied to limit-order market data finds depth losses of up to 8% attributable to queueing. Published in the Journal of Financial Markets, 2025."
+summary: "Queue position is a form of risk, not just a time delay, and that market makers react to that risk by withholding liquidity. A queueing model applied to a price-time priority market finds losses to depth of as much as 8%. This inefficiency does not exist in pro-rata systems (though they have their own problems)."
 cover:
-    image: "paper2.png"
-    alt: "Dimensions of a sausage dog"
+    image: "paper2.jpeg"
+    alt: "A long queue of annoyed people."
     relative: true
 editPost:
-    URL: "https://github.com/pmichaillat/hugo-website"
-    Text: "Journal of Canine Science"
+    URL: "https://www.sciencedirect.com/science/article/pii/S1386418125000229"
+    Text: "Journal of Financial Markets"
 
 ---
 
@@ -19,43 +19,48 @@ editPost:
 
 ##### Download
 
-+ [Paper](paper2.pdf)
-+ [Online appendix](appendix2.pdf)
-+ [Code and data](https://github.com/pmichaillat/wunk-model)
++ [Paper](https://www.sciencedirect.com/science/article/pii/S1386418125000229)
+<!--
++ [Presentation](presentation)
++ [Online appendix](appendix1.pdf)
++ [Code and data](https://github.com/pmichaillat/feru)
+-->
 
 ---
 
 ##### Abstract
 
-This paper studies the pulmonary efficiency of sausage dogs. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur: $\sin(\theta) = x^2 - \exp(1+\chi)$. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor $\zeta$ incididunt ut labore et dolore magna aliqua: $p(x) = \int \cos(\zeta) d\zeta - \theta$. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Limit order markets use a queuing system in which limit orders must wait in line to execute. We show that the queue position of a limit order influences its adverse selection risk and inhibits inventory risk management. Trade may worsen market maker risk sharing, unlike many protocols without queuing. We uncover a crowding-out effect: An inventory shock reduces liquidity provision by market makers later in the queue. Using futures data, we confirm both low risk sharing and the crowding-out effect. These two results imply a trade-off, as the queuing sequence that optimizes risk sharing decreases quoted depth up to 8.4%.
 
 ---
 
-##### Figure 2: Dimensions of a sausage dog
+##### Figure 3: Correlation of market maker inventory with queue position
 
-![](paper2.png)
+![](figure3.png)
 
 ---
 
 ##### Citation
 
-Prinzel, Florianus, and Moritz-Maria von Igelfeld. 2004. "The Finer Points of Sausage Dogs." *Journal of Canine Science* 43 (2): 89–109. http://www.alexandermccallsmith.com/book/the-finer-points-of-sausage-dogs.
+Garriott, C., van Kervel, V., & Zoican, M. (2025). Queuing and inventories in limit order markets. *Journal of Financial Markets*, 100982.
 
 ```latex
-@article{PI04,
-author = {Florianus Prinzel and Moritz-Maria von Igelfeld},
-year = {2004},
-title ={The Finer Points of Sausage Dogs},
-journal = {Journal of Canine Science},
-volume = {43},
-number = {2},
-pages = {89--109},
-url = {http://www.alexandermccallsmith.com/book/the-finer-points-of-sausage-dogs}}
+@article{garriott2025queueing,
+  title={Queueing and inventories in limit order markets},
+  author={Garriott, Corey and van Kervel, Vincent and Zoican, Marius},
+  journal={Journal of Financial Markets},
+  volume={75},
+  pages={100982},
+  year={2025},
+  publisher={Elsevier}
+}
 ```
 
 ---
 
+<!--
 ##### Related material
 
-+ [Presentation slides](presentation2.pdf)
-+ [Wikipedia entry](https://en.wikipedia.org/wiki/The_Finer_Points_of_Sausage_Dogs)
++ [Presentation slides](presentation1.pdf)
++ [Summary of the paper](https://www.penguinrandomhouse.com/books/110403/unusual-uses-for-olive-oil-by-alexander-mccall-smith/)
+-->
