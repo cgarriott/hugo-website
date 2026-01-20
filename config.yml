@@ -21,7 +21,7 @@ menu:
         - name: Media
           url: books/
           weight: 30
-        - name: Lists
+        - name: Lists of things
           url: lists/
           weight: 40
         - name: CV
@@ -70,7 +70,7 @@ params:
               url: codes/
             - name: Media
               url: media/
-            - name: Lists
+            - name: Lists of things
               url: lists/
             - name: CV
               url: CV/

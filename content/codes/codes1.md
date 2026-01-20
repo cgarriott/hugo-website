@@ -21,7 +21,7 @@ Features:
 
 - **Time series completion** ideal for merging: every bond listed on every day
 - **Tenor classifications** giving the tenor of bills, notes, and bonds
-- **Vintage tracking** or "runness." This is neat. Vintage is an ordinal ranking by issue date within date-tenor groups (on-the-run securities have vintage 0, the first off-the-run is vintage 1, and so on). That you can tell where in the "run" stack a bond belongs within its tenor class. Bonds that have been announced (i.e., "when-issued") have vintage -1.
+- **Vintage tracking** or "runness." This is neat. Vintage is an ordinal ranking by issue date within date-tenor groups (on-the-run securities have vintage 0, the first off-the-run is vintage 1, and so on). That way you can tell where a bond sits in the "run" stack within its tenor class. Bonds that have been announced by ODM (i.e., "when-issued") have vintage -1.
 - **Auction data** marking openings, re-openings, unscheduled re-openings, and issuance
 
 ---
@@ -33,7 +33,7 @@ It's just one file. Run it, and it returns a `DataFrame` with the panel. Easy!
 Click to download ustCusipPanel.py from GitHub:
 
 + **Repository**: [ustCusipPanel on GitHub](https://github.com/cgarriott/ustCusipPanel)
-+ **Documentation**: [API Reference and Usage Examples](https://github.com/cgarriott/ustCusipPanel#readme)
++ **Documentation**: [Usage examples](https://github.com/cgarriott/ustCusipPanel#readme)
 + **Data Source**: [U.S. Treasury Fiscal Data API](https://fiscaldata.treasury.gov/)
 + **Installation**: Available from PyPI (when published) or install from source
 
@@ -60,13 +60,13 @@ The returned Polars DataFrame contains the following 16 columns:
 |--------|------|-------------|
 | `date` | Date | Business date (excludes weekends) |
 | `cusip` | String | CUSIP security identifier |
-| `security_type` | String | "Bill", "Note", or "Bond" |
+| `securityType` | String | "Bill", "Note", or "Bond" |
 | `tenor` | Int64 | Tenor in weeks (bills) or years (notes/bonds) |
 | `vintage` | Int64 | Ordinal ranking by firstIssueDate (0 = on-the-run) |
 | `coupon` | Float64 | Interest rate as a percentage |
 | `maturityDate` | Date | Security maturity date |
-| `inflation_index_security` | Boolean | True for TIPS (Treasury Inflation-Protected Securities) |
-| `floating_rate` | Boolean | True for FRNs (Floating Rate Notes) |
+| `TIPS` | Boolean | True for TIPS (Treasury Inflation-Protected Securities) |
+| `floatingRate` | Boolean | True for FRNs (Floating Rate Notes) |
 | `firstIssueDate` | Date | Original issue date of the security |
 | `issuanceType` | String | "Opening", "Re-opening", or None |
 | `auctionDate` | Date | Date of the most recent auction |
